@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form validation</h1>
+         <form>
+             <div class="input-group">
+                 <label><b>Full name</b></label>
+                 <input type="text" placeholder="enter your name" id="contact-name" onkeyup="validateName()">
+                 <span id="name-error"></span>
+             </div>
+ 
+             <div class="input-group">
+                 <label><b>Phone no.</b></label>
+                 <input type="number" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                 <span id="phone-error"></span>
+             </div>
+ 
+             <div class="input-group">
+                 <label><b>Email id</b></label>
+                 <input type="email" placeholder="enter email" id="contact-email" onkeyup="validateEmail()">
+                 <span id="email-error"></span>
+             </div>
+ 
+             <div class="input-group">
+                 <label><b>Password</b></label>
+                 <input type="password" placeholder="password" id="contact-password" onkeyup="validatePassword()">
+                 <span id="password-error"></span>
+             </div>
+ 
+            <div class="input group">
+                 <label><b>Gender</b></label>
+                 Male:<input type="radio" name="gender" value="male">
+                 Female:<input type="radio" name="gender" value="female">
+                 other:<input type="radio" name="gender" value="other">
+                 <span id="gender-error"></span>
+             </div>
+ 
+             <div class="input">
+                 <tr>
+                     <td>
+                         <label><b>Language</b></label>
+                     </td>
+                     <td>
+                         <select name="mylist" id="mylist" onchange="validatelanguage()">
+                         <option value="0">ṣelect your language</option>
+                         <option value="Tamil">Tamil</option>
+                         <option value="English">English</option>
+                         <option value="Hindi">Hindi</option>
+                         <option value="malayalam">malayalam</option>
+                         <option value="telugu">Telugu</option>
+                     </select>
+                     </td>
+                 </tr>
+                 <span id="language-error"></span>
+             </div>
+ 
+ 
+             <div class="input">
+                 <tr>
+                     <td>
+                         <label><b>State</b></label>
+                     </td>
+                     <td>
+                         <select name="state" id="State">
+                         <option value="">select your state</option>
+                         <option value="Tamil">Tamil Nadu</option>
+                         <option value="Englesh">Kerala</option>
+                         <option value="Hindi">Telungana</option>
+                         <option value="malayalam">Karnadaga</option>
+                         <option value="telugu">Magarastra</option>
+                     </select>
+                     </td>
+                 </tr>
+                 <span id="state-error"></span>
+             </div>
+ 
+             <div class="input-group">
+                 <label><b>Your message</b></label>
+                 <textarea placeholder="enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                 <span id="message-error"></span>
+             </div>
+ 
+             <div class="inp">
+                 <input type="checkbox" id="checkbox">
+                 <label for="terms"> Accept Terms And Condition</label>
+             </div>
+ 
+             <button onclick="return validateForm()">submit</button>
+             <span id="submit-error"></span>
+         </form>
+     </div>
+
+    <script src="./insex.js"></script>
+</body>
+</html>

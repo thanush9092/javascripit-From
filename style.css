@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 30px;
+    position: absolute;
+    bottom: 680px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.container form {
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background-color: rgb(68, 200, 200);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgb(48, 51, 105);
+    border-radius: 4px;
+    position: relative;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.inp{
+    padding-top: 10px;
+    padding-left: 125px;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-group label {
+    flex-basis: 28%;
+}
+
+.input label {
+    flex-basis: 28%;
+}
+
+.input-group input,
+.input-group textarea {
+    flex-basis: 68%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(70, 67, 67);
+    font-size: 16px;
+    display: block;
+}
+
+
+.cla{
+     display: flex;
+}
+
+::placeholder {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+form button {
+    background-color: lightgoldenrodyellow;
+    color: rgb(94, 94, 89);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin: 30px auto 10px;
+}
+
+.input-group span {
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;    
+}
+
+.input span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+
+#submit-error {
+    color: red;
+}
+
+.input-group span i {
+    color: green;
+}
